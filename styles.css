@@ -1,0 +1,60 @@
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        h4 {
+            text-align: center;
+            border-top: 1px solid black;
+            padding: 20px;
+
+        }
+
+        .container {
+            background-color: aqua;
+            inset: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+        }
+
+        .card {
+            position: relative;
+            width: fit-content;
+            border: 1px solid #000; /* Set border with a single line */
+            border-radius: 8px; /* Optional: Add border-radius to round the corners */
+        }
+        .card::before{
+            content: 'x';
+            position:absolute;
+            top: -4px;
+            left: 2px;
+            font-size: 24px;
+            color: #999;
+        }
+        .card::after{
+            content: '9';
+            position: absolute;
+            top: -1rem;
+            right: -1rem;
+            padding: 10px 14px;
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+        }
+
+        .card img {
+            background-color: whitesmoke;
+            width: 250px;
+            height: 250px;
+            border-radius: 8px 8px 0 0; /* Round only the top corners of the image */
+            padding: 10px;
+
+        }
